@@ -1,0 +1,93 @@
+A. 1/ Y nghia cua Constructor
+    - khoi tao gia tri cho lop
+2/ Dac diem
+    - Co cung ten voi Class
+    - Khong tra ve gia tri
+
+B/ Static block: duoc thuc thi truoc ham main
+C/ Block khong phai static:
+    - Cac cau lenh duoc copy vao moi constructor khi compile;
+        VD: Class Student {
+          doublt dtb;
+          Sting namel
+          {dtb=7.0}
+
+          }
+           // diem trung binh = 7.0 se duoc copy vao 2 constructor duoi day
+          Student() {
+          }
+
+          Student(String fullname) {
+            this.name = fullname;
+          }
+        }
+D/ nap chong
+    - Thay doi so tham so
+    - Thay doi kieu du lieu cua tham so
+
+ ====================================================
+ A. Cac bien, hang, phuong thuc static
+ - Truy cap static thong qua ten lop
+ - Truy cap thuong thong qua method
+
+ 1. Final keyword
+ 2. Synchronized keyword
+ - VD: Dung trong TH dem so luong nguoi truy ca
+ - # Cau truc du lieu con-current
+ 3. This keyword
+ - Dai dien cho (doi tuong) lop hien thoi
+
+ B.KE THUA - is-a
+ - Chi ke thua methods && fields
+    a/ super
+        - duoc su dung de goi construtors va truy ca den thuoc tinh, phuong thuc cua lop cha
+    b/
+
+Default constructor (no-arg constructor):
+ - Khi tạo class, mà ko tạo constructor cho nó, thì Java sẽ tự động tạo cho lớp đó một constructor.
+ - Trong quan hệ kế thừa thì constructor của lớp con sẽ tự động gọi constructor mặc định của lớp cha
+ (nếu như người lập trình ko viết lệnh gọi một constructor cụ thể của lớp cha)
+ - Muon tao doi tuong cua lop con thi phai tao doi tuong cua lop cha truoc
+
+
+ B. AGGREGATION - has-a
+ C. ABSTRACTION
+  - Showing only functionally to the user
+  - 2 ways: abstract class + interface (muc do truu tuong 0 = 100%)
+    + muc do truu tuong: so luong phuong thuc truu tuong/ tong so luong phuong thuc
+  - Abstract class :
+    + Khong the tao doi tuong tu mot abstract class hay interface;
+    + CO the chua abstract hoac non-abstract class
+    + Phai duoc khai bao voi tu khoa abstract
+  - Abstract method:
+    + abstract void printStatus();
+
+  - Interface:
+ => Interface giong nhu mot nguyen tac, mot chuan muc de thông qua đó các hệ thống trao đổi thông tin và giao tiếp với nhau
+
+  - Comparable, Comparator: ứng dụng vào sắp xếp
+    + Sort: dùng lớp và phương thức để tìm kiếm
+    + Search:
+
+ D. Polymorphism - đa hình
+  - Thực hiện một hành động theo nhiều cách khác nhau
+  - Nạp chồng/ ghi đè
+
+ E. OBJECT CLASS
+  - Moi class deu extend class "Object"
+  - 3 phuonwg thuc cua lop Object thuong duoc su dung:
+    + public boolean equals (Object obj):
+        . so sansh ddiaj chir trar vef true hoajwc false
+        . VD: obj1.equals(obj2);
+        => Overide ham equals de so sanh trong tung truong hop
+        => VD: String st1 = new String ("Ha Thi Ngan")
+                String st2 = new String ("Ha Thi Ngan")
+                str1, st2 o vi tri bo nho khac nhau
+                str.equals(str2) => return true
+    + public int hashCode()
+        . Java quản lý đối tượng theo mã Băm
+    + public toString
+        . luôn phải overide
+
+    + instanceOf: ép kiểu đối tượng
+    + Finalize:
