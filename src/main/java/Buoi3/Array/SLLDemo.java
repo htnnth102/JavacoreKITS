@@ -44,16 +44,41 @@ class SLL {
 
     void printAll() {
         Element element = head;
-        if (Kiemtra()) {
             if (element != null) {
-                System.out.println(element.data);
+                System.out.print(element.data);
                 element = element.next;
             }
             while (element != null) {
-                System.out.println("," + element.data);
+                System.out.print("," + element.data);
                 element = element.next;
             }
+    }
+
+    int deleteFromFront() {
+        if (isEmpty())
+            return -1;
+        int x = head.data;
+        head = head.next;
+        return x;
+    }
+
+    int deleteFromRear() {
+        if (isEmpty()) {
+            return -1;
         }
+        int x;
+        Element e = head, _e = head;
+        while ( e.next != null) {
+            _e = e;
+            e = e.next;
+        }
+        x = e.data;
+        if (head == e) {
+            head = null;
+        } else {
+            _e.next = null;
+        }
+        return x;
     }
     void printfLastIndex() {
         Element e = head;
@@ -83,7 +108,14 @@ public class SLLDemo {
         sll.insertAtFront(7);
         sll.insertAtFront(3);
         sll.insertAtRear(20);
-        System.out.println(sll.Kiemtra());
+//        System.out.println(sll.Kiemtra());
+//        sll.printAll();
+        int y = sll.deleteFromFront();
+        System.out.println("Deleted element: " + y);
         sll.printAll();
+        int lastIndex = sll.deleteFromRear();
+        System.out.println("\nDeleted element: " + lastIndex);
+        sll.printAll();
+
     }
 }
