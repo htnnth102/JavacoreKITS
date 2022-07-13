@@ -54,7 +54,7 @@ class SLL {
             }
     }
 
-    int deleteFromFront() {
+    public int deleteFromFront() {
         if (isEmpty())
             return -1;
         int x = head.data;
