@@ -1,0 +1,3 @@
+A. Singly Linked List (SLL)
+    - elements not stored at the continuous location.
+    -
