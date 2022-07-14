@@ -1,0 +1,48 @@
+BINARY SEARCH - ERROR HANDLING
+1- BINARY SEARCH
+1. Tìm kiếm
+2. Xóa
+    - Xóa node lá
+    - XÓa 1 nút chỉ có một con khác null
+    - Xóa 1 nút có cả 2 con khác null
+        + Nối thẳng từ node cha sang node của cây con không null
+    -> B1. Tìm nút thay thế:
+        + Nút trái cùng của cây con phải
+        + Nút phải cùng của cây con trái
+       B2. Lấy khóa ở nút thay thế ghi đè lên khóa cần xóa
+       B3. Xóa nút thay thế
+
+- BU JIN "HAI XING", YAO CHU SE
+1- ERROR HANDLING         try {
+                               //code can throw exceptions
+                          }
+                          catch (Exception ex) {
+                               // exception handler
+                          }
+                          finally {
+                              // this block is always executed
+                          }
+                          Câu lệnh sau khối try
+       => co the try...finally without catch
+       => THDB:                           try {
+                                               //code can throw exceptions
+                                          }
+                                          catch (Exception ex) {
+                                               System.exit(0)
+                                               // thoat chuong trinh ngay lap tuc ma khong can chay finally
+                                          }
+                                          finally {
+                                              // this block is always executed
+                                          }
+                                          Câu lệnh sau khối try
+
+
+       2. THROW
+          Lưu ý:  - Phải có khối lệnh finally vì trong trường hợp ném ra ngoại lệ thì câu lệnh sau khối try sẽ không được thực thi
+                  - Exception cos quan hệ cha con thì bắt ngoại lệ con trước ngoại lệ cha sau
+
+       3. RULES
+       4. USER-DEFINED EXCEPTION: Là các exception người dùng tự định nghĩa
+
+
+
