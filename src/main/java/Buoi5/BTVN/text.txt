@@ -1,0 +1,5 @@
+Ha Thi Ngan,Ha Noi, 1999, 8.4
+Nguyen Thi Ngan,Ha Nam, 1999, 8.5
+Mot Con Vit, Ha Tay, 2022, 8.4
+
+// dung split, stringtokenize de tach thong tin roi push theo tung thuoc tinh
