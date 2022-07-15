@@ -4,7 +4,7 @@ import java.io.*;
 
 public class ReadFromFile {
     public static void main(String[] args) {
-        File f = new File("D:\\Java&Database\\Demo\\src\\main\\java\\Buoi5\\SerialBeanMyDemo\\testDemo2.txt");
+        File f = new File("D:\\Java&Database\\Demo\\src\\main\\java\\Buoi5\\SerialBeanMyDemo\\test.txt");
         try {
             ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(f));
             while (true) {
