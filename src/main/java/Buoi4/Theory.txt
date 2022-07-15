@@ -2,7 +2,7 @@ BINARY SEARCH - ERROR HANDLING
 1- BINARY SEARCH
 1. Tìm kiếm
 2. Xóa
-    - Xóa node lá
+    - Xóa node lá: đặt tham chiếu từ nút cha của x bằng null
     - XÓa 1 nút chỉ có một con khác null
     - Xóa 1 nút có cả 2 con khác null
         + Nối thẳng từ node cha sang node của cây con không null

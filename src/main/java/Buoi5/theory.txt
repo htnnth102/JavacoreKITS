@@ -1,0 +1,15 @@
+I/O STREAM
+
+1. Introduction to I/O Stream
+   - there are five types: Byte, Character, Bufferd, Data, Object
+   - BufferedInputStream :
+    * chuyen luong: trong trường hợp muốn đọc một lần một mảng byte
+    * BufferedInput
+
+2.
+byte, byte[]
+char, String
+
+TH muon ghi mot Object voi nhieu thuoc tinh, su dung Serialization (tuan tu hoa) -chuyen mot doi tuong thanh mot luong byte
+Derialization - chuyen mot luong byte thanh doi tuong
+=> Qua trinh tuan tu hoa chi thuc hien voi cac non-static data
