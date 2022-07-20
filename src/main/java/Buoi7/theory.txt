@@ -1,0 +1,20 @@
+ 1. Giao diện chức năng
+    - là một giao diện chứa duy nhất một phương thức trừu tượng
+ 2. Lambda Expressions
+    - 1123456789
+3. Stream
+
+Consumber s = (t) -> {System.out.println(t);}
+public static Collector<T, ?, M> toMap (Function<? super T, ? extends K>
+keyMapper, Function<? super T, ? extends U> valueMapper,
+BinaryOperator<U> mergeFunction, Supplier <M> mapSupplier) {}
+keyMapper : để trích xuất một khóa (key) từ một phần tử Stream.
+valueMapper : để trích xuất một giá trị (value) được liên kết với một khóa (key).
+mergeFunction : để giải quyết xung đột của khóa. Tham số này không bắt buộc.
+Tuy nhiên, nếu trong danh sách có key trùng, nó sẽ throw một ngoại lệ
+IllegalStateException.
+mapSupplier: trả về một instance của Map mới, rỗng, trong đó kết quả sẽ được
+chèn vào. Tham số này không bắt buộc, mặc định là HashMap
+
+
+

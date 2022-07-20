@@ -1,0 +1,38 @@
+I. Generic programming (Generic Types)
+- intSet
+- StringSet
+
+- Du an ve cai gi, cong nghe gi, ket qua ra sao
+
+2. DAnh sách liên  kết không cho phép truy cập ngẫu nhiên, lý do: các phần tử có thể ở các địa chỉ không liên tiếp
+=> Ưu điểm CÓ thể lưu thêm phần tử mới ở địa chỉ bất kỳ rồi nối vào
+
+3. Utility Classes: Collections and Array
+
+* Bai toan tim kiem:
+                    - Tra ve true/false:
+                        + contains: List, Set
+                        + containsKey: Map
+
+                    - Tra ve gia tri: input: key; => output: value(object)
+                        + Collections.binarySearch
+                        + Arrays.binarySearch
+                        + Map.get(key) --> return Object/value
+
+                  => VD minh hoa:
+4. Priority Queues
+
+*HEAP SORT
+
+!HashSet
+- add (tu dong goi contains de kiem tra co trung lap hay khong)
+- contains
+
+!HashMap(key)
+- put
+- containKey();
+
+hashCode() {
+}
+
+

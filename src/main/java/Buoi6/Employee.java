@@ -1,8 +1,11 @@
-package Buoi5.SerialBeanMyDemo;
+package Buoi6;
 
+import collections.Employee2;
+
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class Employee implements Serializable, Comparable<Employee> {
+public class Employee implements Serializable{
     String name;
     int age;
     boolean gender;
@@ -18,7 +21,6 @@ public class Employee implements Serializable, Comparable<Employee> {
     public Employee() {
 
     }
-
 
     public String getName() {
         return name;
@@ -52,9 +54,8 @@ public class Employee implements Serializable, Comparable<Employee> {
         this.salary = salary;
     }
 
-    @Override
-    public int compareTo(Employee o) {
-        int compareVal = this.name.compareTo(o.name);
-        return compareVal;
-    }
+//    @Override
+//    public int compareTo(Employee o) {
+//        int compareVal =
+//    }
 }

@@ -9,7 +9,6 @@ public class ReadFromFile {
             ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(f));
             while (true) {
                 Employee e = (Employee) objectInputStream.readObject();
-
                 System.out.print("Name "+ e.getName() + "\t");
                 System.out.print("Age "+e.getAge() + "\t");
                 System.out.print("Gender " + e.isGender() + "\t");
